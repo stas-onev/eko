@@ -1,0 +1,331 @@
+.btn{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 90px;
+	line-height: 80px;
+	height: 80px;
+	background: $primary;
+	padding: 0 20px 0 55px;
+	margin: 6px 0;
+	color: $text-color;
+	position: relative;
+	transition: all $t;
+
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		left: 19px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 31px;
+		height: 49px;
+		background: url(../img/arrow.png) no-repeat;
+	}
+
+	&:hover{
+		background: $pink;
+		color: #fff;
+
+		&:after{
+			background: url(../img/arrow-olive.png) no-repeat;
+		}
+	}
+
+	@media screen and (max-width: 1499px){
+		font-size: 60px;
+	}
+
+	@media screen and (max-width: 1099px){
+		font-size: 40px;
+		height: 60px;
+		line-height: 60px;
+		padding-left: 35px;
+		padding-right: 15px;
+
+		&:after{
+			left: 10px;
+			transform: translateY(-50%) scale(0.5);
+			transform-origin: left center;
+		}
+	}
+}
+
+.cta-btn{
+	display: flex;
+	position: relative;
+	background: $pink;
+	color: #fff;
+	transition: all $t;
+	border: 5px solid $pink;
+
+	&:before{
+		content: '';
+		padding-top: 100%;
+		z-index: -1;
+	}
+
+	&:after{
+		content: '';
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		border: 1px solid $wine;
+		z-index: 1;
+		transition: all $t;
+	}
+
+	.btn-content{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		flex-direction: column;
+		font-size: 45px;
+		line-height: 40px;
+		z-index: 2;
+		padding: 6px;
+
+		&:after{
+			content: '[+]';
+			font-weight: bold;
+			font-size: 34px;
+			line-height: 30px;
+			color: $wine;
+			display: inline-block;
+			padding-top: 10px;
+		}
+
+		&:before{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: #fff;
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: -1;
+			transform: scale(0);
+			transition: all $t;
+		}
+
+		strong{
+			font-size: 67px;
+			font-weight: bold;
+		}
+
+		@media screen and (max-width: 999px){
+			font-size: 35px;
+			line-height: 30px;
+
+			&:after{
+				font-size: 28px;
+				line-height: 24px;
+			}
+
+			strong{
+				font-size: 52px;
+			}
+		}
+	}
+
+	&:hover{
+		color: $pink;
+
+		&:after{
+			opacity: 0;
+		}
+
+		.btn-content{
+			&:before{
+				transform: scale(1);
+			}
+		}
+	}
+
+	&.big{
+		border-width: 15px;
+
+		.btn-content{
+			font-size: 95px;
+			line-height: 61px;
+			padding: 16px;
+
+			&:after{
+				font-size: 85px;
+				line-height: 80px;
+				position: absolute;
+				left: 20px;
+				bottom: 20px;
+			}
+
+			@media screen and (max-width: 1299px){
+				&:after{
+					font-size: 55px;
+					line-height: 50px;
+					left: 10px;
+					bottom: 10px;
+				}
+			}
+
+			@media screen and (max-width: 999px){
+				font-size: 75px;
+				line-height: .75;
+
+				&:after{
+					font-size: 40px;
+					line-height: 1;
+				}
+			}
+		}
+	}
+
+	&.wine{
+		background: $wine;
+		border-color: $wine;
+
+		&:after{
+			border-color: $pink;
+		}
+
+		.btn-content{
+			&:after{
+				color: $pink;
+			}
+		}
+
+		&:hover{
+			color: $wine;
+		}
+	}
+
+	&.gray{
+		background: $gray;
+		border-color: $gray;
+
+		&:after{
+			border-color: $olive;
+		}
+
+		.btn-content{
+			&:after{
+				color: $olive;
+			}
+		}
+
+		&:hover{
+			color: $gray;
+		}
+	}
+}
+
+.big-btn{
+	display: flex;
+	position: relative;
+	background: $pink;
+	color: #000;
+	transition: all $t;
+	border: 25px solid $pink;
+
+	&:before{
+		content: '';
+		padding-top: 100%;
+		z-index: -1;
+	}
+
+	.btn-content{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		flex-direction: column;
+		font-size: 180px;
+		line-height: 140px;
+		font-weight: bold;
+		z-index: 2;
+
+		&:after{
+			content: '';
+			display: block;
+			width: 222px;
+			height: 94px;
+			background: url(../img/arrows.png) no-repeat;
+			margin-top: 125px;
+		}
+
+		&:before{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: #fff;
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: -1;
+			transform: scale(0);
+			transition: all $t;
+		}
+
+		span{
+			display: block;
+		}
+	}
+
+	&:hover{
+		// background: transparent;
+		color: $pink;
+
+		.btn-content{
+			&:before{
+				transform: scale(1);
+			}
+		}
+	}
+
+	&.gray{
+		background: $gray;
+		border-color: $gray;
+		color: #fff;
+
+		&:hover{
+			// background: transparent;
+			color: $gray;
+		}
+	}
+
+	@media screen and (max-width: 1499px){
+		.btn-content{
+			font-size: 120px;
+			line-height: .8;
+
+			&:after{
+				margin-top: 25px;
+				width: 106px;
+				height: 45px;
+				background-size: contain;
+			}
+		}
+	}
+
+	@media screen and (max-width: 999px){
+		.btn-content{
+			font-size: 80px;
+		}
+	}
+}

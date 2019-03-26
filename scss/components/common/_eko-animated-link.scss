@@ -1,0 +1,181 @@
+.eko-animated-link{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	color: #fff;
+	padding: 10px 19px;
+	background: $pink;
+	height: 100%;
+	align-items: center;
+
+	.eko{
+		width: 50%;
+		flex: none;
+		text-align: center;
+		font-size: 110px;
+		line-height: 80px;
+		color: #fff;
+		font-family: $second-font;
+		text-transform: uppercase;
+
+		&.active{
+			font-weight: bold;
+		}
+	}
+
+	.link-text{
+		width: 100%;
+		display: block;
+		font-size: 80px;
+		line-height: 80px;
+		background: $primary;
+		padding: 0 20px 0 55px;
+		margin: 6px 0;
+		color: $text-color;
+		position: relative;
+		transition: all $t;
+
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			left: 19px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 31px;
+			height: 49px;
+			background: url(../img/arrow.png) no-repeat;
+		}
+	}
+
+	&:hover{
+		background: $primary;
+
+		.link-text{
+			background: $pink;
+			color: #fff;
+
+			&:after{
+				background: url(../img/arrow-olive.png) no-repeat;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1899px){
+		.eko{
+			font-size: 100px;
+			line-height: .75;
+		}
+
+		.link-text{
+			font-size: 75px;
+			line-height: 1;
+		}
+	}
+
+	@media screen and (max-width: 1799px){
+		.link-text{
+			font-size: 65px;
+		}
+
+		.eko{
+			font-size: 90px;
+		}
+	}
+
+	@media screen and (max-width: 1699px){
+		.link-text{
+			font-size: 60px;
+		}
+
+		.eko{
+			font-size: 85px;
+		}
+	}
+
+	@media screen and (max-width: 1599px){
+		.link-text{
+			font-size: 55px;
+			line-height: 65px;
+		}
+
+		.eko{
+			font-size: 80px;
+		}
+	}
+
+	@media screen and (max-width: 1499px){
+		.link-text{
+			font-size: 50px;
+		}
+
+		.eko{
+			font-size: 75px;
+		}
+	}
+
+	@media screen and (max-width: 1399px){
+		.link-text{
+			font-size: 45px;
+		}
+
+		.eko{
+			font-size: 65px;
+		}
+	}
+
+	@media screen and (max-width: 1299px){
+		.link-text{
+			font-size: 36px;
+			line-height: 40px;
+			padding-right: 15px;
+			padding-left: 25px;
+
+			&:after{
+				transform: translateY(-50%) scale(0.5);
+				transform-origin: left center;
+				left: 10px;
+			}
+		}
+
+		.eko{
+			font-size: 60px;
+		}
+	}
+
+	@media screen and (max-width: 1199px){
+		.eko{
+			font-size: 55px;
+		}
+	}
+
+	@media screen and (max-width: 1099px){
+		.eko{
+			font-size: 48px;
+		}
+	}
+
+	@media screen and (max-width: 999px){
+		padding: 5px;
+
+		.eko{
+			font-size: 44px;
+		}
+	}
+
+	@media screen and (max-width: 899px){
+		.link-text{
+			font-size: 30px;
+		}
+
+		.eko{
+			font-size: 36px;
+		}
+	}
+
+	@media screen and (max-width: 799px){
+		.link-text{
+			margin: 3px 0;
+		}
+	}
+}

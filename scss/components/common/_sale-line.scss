@@ -1,0 +1,57 @@
+.sale-line{
+	width: 100%;
+	overflow: hidden;
+	background: $primary;
+	font-size: 50px;
+	line-height: 70px;
+	font-family: $second-font;
+	color: #fff;
+	text-transform: uppercase;
+
+	span{
+		color: #000;
+	}
+
+	@media screen and (max-width: 1399px){
+		font-size: 36px;
+		line-height: 50px;
+	}
+
+	.line-content{
+		animation: saleline 60s infinite linear;
+	}
+
+	&.reverse{
+		.line-content{
+			animation: saleline-reverse 60s infinite linear;
+		}
+	}
+}
+
+@keyframes saleline{
+	0%{
+		transform: translateX(100%);
+	}
+
+	50%{
+		transform: translateX(0);
+	}
+
+	100%{
+		transform: translateX(100%);
+	}
+}
+
+@keyframes saleline-reverse{
+	0%{
+		transform: translateX(0);
+	}
+
+	50%{
+		transform: translateX(100%);
+	}
+
+	100%{
+		transform: translateX(0);
+	}
+}
