@@ -24,7 +24,7 @@
 						</div>
 					</div>
 					<div class="fss-item fss-button">
-						<a href="#" class="cta-btn">
+						<a href="#sale-section" class="cta-btn">
 							<div class="btn-content">
 								<span>אני רוצה </span>
 								<strong>הנחה</strong>
@@ -34,7 +34,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="second-section squares-section">
+		<div class="second-section squares-section" id="smart-tin">
 			<div class="container">
 				<div class="tiles-container">
 					<div class="column wide">
@@ -115,7 +115,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="products-section">
+		<div class="products-section" id="products-section">
 			<div class="container">
 				<div class="section-inner">
 					<div class="section-text">
@@ -185,7 +185,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="fourth-section squares-section">
+		<div class="fourth-section squares-section" id="video-section">
 			<div class="container">
 				<div class="tiles-container">
 					<div class="column superwide">
@@ -277,7 +277,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="tiles-container">
+				<div class="tiles-container" id="big-buttons">
 					<div class="column wide">
 						<div class="item">
 							<div class="tile transparent">
@@ -309,14 +309,14 @@
 				</div>
 			</div>
 		</div>
-		<div class="sale-section">
+		<div class="sale-section" id="sale-section">
 			<div class="sale-line reverse">
 				<div class="line-content">Sale<span>Sale</span>Sale<span>Sale</span>Sale<span>Sale</span>Sale<span>Sale</span>Sale<span>Sale</span>Sale<span>Sale</span>Sale<span>Sale</span>Sale<span>Sale</span>Sale<span>Sale</span>Sale<span>Sale</span>Sale<span>Sale</span>Sale<span>Sale</span>Sale<span>Sale</span>Sale<span>Sale</span>Sale<span>Sale</span>Sale<span>Sale</span>Sale<span>Sale</span>Sale<span>Sale</span>Sale<span>Sale</span>Sale<span>Sale</span></div>
 			</div>
 			<div class="container">
 				<div class="sale-buttons">
 					<div class="item">
-						<a href="#" class="cta-btn big">
+						<a href="#" class="cta-btn big" data-panel="#panel-10-percent">
 							<div class="btn-content">
 								<strong>10%</strong>
 								<span>הנחה</span>
@@ -324,7 +324,7 @@
 						</a>
 					</div>
 					<div class="item">
-						<a href="#" class="cta-btn big wine">
+						<a href="#" class="cta-btn big wine" data-panel="#panel-15-percent">
 							<div class="btn-content">
 								<strong>15%</strong>
 								<span>הנחה</span>
@@ -332,7 +332,7 @@
 						</a>
 					</div>
 					<div class="item">
-						<a href="#" class="cta-btn big gray">
+						<a href="#" class="cta-btn big gray" data-panel="#panel-20-percent">
 							<div class="btn-content">
 								<strong>20%</strong>
 								<span>הנחה</span>

@@ -26,6 +26,10 @@
 			animation: saleline-reverse 60s infinite linear;
 		}
 	}
+
+	&.no-bg{
+		background: transparent;
+	}
 }
 
 @keyframes saleline{

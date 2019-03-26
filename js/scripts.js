@@ -51,6 +51,25 @@ $(document).ready(function(){
 		infinite: true
 	});
 
+	// Panels
+	var scrollTop;
+	$('[data-panel]').click(function(e){
+		e.preventDefault();
+
+		var dest = $( $(this).data('panel') );
+
+		dest.addClass('opened').siblings().removeClass('opened');
+
+		scrollTop = $('body').offset().top;
+		$('body').addClass('opened-panel').scrollTop(scrollTop);
+	});
+
+	$('.panel-close').click(function(){
+		$(this).closest('.panel').removeClass('opened');
+
+		$('body').removeClass('opened-panel').scrollTop(scrollTop);
+	});
+
 	// Eko Link
 	var i = 0;
 	var order = [1, 0, 3, 2, 5, 4, 7, 6];
@@ -68,7 +87,7 @@ $(document).ready(function(){
 	// Scroll to anchor
 	$('a[href^="#"]').click(function(){
 		 $('html, body').animate({
-			scrollTop: $( $.attr(this, 'href') ).offset().top
+			scrollTop: $( $.attr(this, 'href') ).offset().top - $('.header').height() - 20
 		}, 500);
 		return false;
 	});

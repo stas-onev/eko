@@ -17,23 +17,23 @@
 </head>
 <body>
 	<div class="wrapper push">
-		<div class="page">
+		<div class="page" id="top">
 			<header class="header">
 				<div class="container">
 					<div class="header-inner">
 						<div class="header-block">
-							<a href="index.php" class="logo-block">
+							<a href="#top" class="logo-block">
 								<img src="img/logo.png" alt="">
 							</a>
 						</div>
 						<div class="header-block flex">
 							<ul class="top-nav">
-								<li><a href="#">הפח החכם</a></li>
-								<li><a href="#">הקולקציה</a></li>
-								<li><a href="#">הבוק</a></li>
-								<li><a href="#">נקודות מכירה</a></li>
+								<li><a href="#smart-tin">הפח החכם</a></li>
+								<li><a href="#products-section">הקולקציה</a></li>
+								<li><a href="#video-section">הבוק</a></li>
+								<li><a href="#big-buttons">נקודות מכירה</a></li>
 							</ul>
-							<a href="#" class="sale-link">SALE<span>SALE</span>SALE</a>
+							<a href="#sale-section" class="sale-link">SALE<span>SALE</span>SALE</a>
 						</div>
 					</div>
 				</div>

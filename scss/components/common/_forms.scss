@@ -1,170 +1,138 @@
-.select-field{
-	display: inline-flex;
-	cursor: pointer;
+.input-field{
+	position: relative;
+	padding-right: 30px;
 
-	&.fullwidth{
-		width: 100%;
+	&:after{
+		content: '';
+		display: block;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 14.5px 19px 14.5px 0;
+		border-color: transparent #fff transparent transparent;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 
-	.jcf-select{
+	input{
 		border: 0;
-		margin-bottom: 0;
-		color: $text-color;
-		font-size: 16px;
-		height: 44px;
-		background: transparent;
-		transition: all $t;
-		cursor: pointer;
+		height: 40px;
 		width: 100%;
-		min-width: auto;
-		border: 1px solid #cacaca;
-	}
-
-	.jcf-select-text{
-		line-height: 44px;
-		margin-right: 44px;
-		margin-left: 15px;
-		font-size: 16px;
-		cursor: pointer;
-
-		.jcf-option-hideme{
-			color: #717171;
-		}
-	}
-
-	.jcf-select-opener{
-		width: 44px;
-		background: none;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
-		&:before{
-			content: "";
-			display: block;
-			width: 12px;
-			height: 7px;
-			background: url(../img/icons/select-opener.png);
-			transition: all $t;
-		}
-	}
-
-	.jcf-drop-active{
-		.jcf-select-opener:before{
-			transform: rotate(-180deg);
-		}
-	}
-
-	.jcf-select-drop{
-		z-index: 90;
-
-		.jcf-select-drop-content{
-		}
-	}
-
-	.jcf-list{
-		margin: 5px 0;
-		overflow: hidden;
-		box-shadow: $shadow;
-
-		li{
-			border-bottom: 1px solid #eee;
-
-			&:last-child{
-				border-bottom: 0;
-			}
-		}
-
-		.jcf-option{
-			font-size: 14px;
-			line-height: 20px;
-			padding: 12px 22px;
-			color: $text-color;
-			cursor: pointer;
-			transition: all $t;
-			background: #fff;
-
-			&:hover,
-			&.jcf-selected{
-				color: $primary;
-				background: #eee;
-			}
-		}
-	}
-
-	&.white{
-		.jcf-select{
-			color: #fff;
-			border-color: #fff;
-		}
-
-		.jcf-select-opener{
-			&:before{
-				background: url(../img/icons/select-opener-orange.png);
-			}
-		}
-	}
-
-	&.small{
-		.jcf-select-text{
-			font-size: 14px;
-		}
-	}
-}
-
-.form-field{
-	p{
-		margin-bottom: 10px;
-		font-size: 18px;
-		line-height: 1.444;
-	}
-
-	.input-field,
-	textarea{
-		border: 0;
-		height: 44px;
-		width: 100%;
-		font-size: 14px;
-		color: $text-color;
-		padding: 0 15px;
+		font-size: 32px;
+		color: #fff;
+		padding: 0;
 		outline: none !important;
 		transition: all $t;
 		background: transparent;
-		border: 1px solid #cacaca;
+		border-bottom: 2px solid #fff;
 		font-family: $main-font;
 
 		&::placeholder{
-			color: #717171;
+			color: #fff;
 			transition: all $t;
 		}
 
 		&:focus{
-			border-color: $primary;
+			border-bottom-color: $gray;
 		}
-	}
-
-	textarea{
-		height: 80px;
-		padding: 10px 15px;
-		resize: none;
-	}
-
-	.note{
-		font-size: 12px;
-		line-height: 18px;
-		font-style: italic;
-		color: $text-color;
-		margin-top: 5px;
-		padding-left: 10px;
 	}
 }
 
 .form{
 	.form-row{
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 
 		&:last-child{
 			margin-bottom: 0;
+		}
+	}
+}
+
+.form-submit{
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	background: $olive;
+	font-family: $main-font;
+	height: 80px;
+	border: 0;
+	font-size: 80px;
+	line-height: 1;
+	max-width: 700px;
+	cursor: pointer;
+	transition: all $t;
+	margin-bottom: 15px;
+
+	&:after{
+		content: '';
+		display: block;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 22.5px 31px 22.5px 0;
+		border-color: transparent $pink transparent transparent;
+		transition: all $t;
+		margin-right: 20px;
+	}
+
+	&:hover{
+		color: #fff;
+		background: $wine;
+
+		&:after{
+			border-color: transparent $olive transparent transparent;
+		}
+	}
+}
+
+.checkbox{
+	input{
+		display: none;
+
+		+ label{
+			padding-right: 20px;
+			font-size: 20px;
+			line-height: 20px;
+			color: #fff;
+			position: relative;
+			cursor: pointer;
+
+			&:before{
+				content: '';
+				display: block;
+				width: 13px;
+				height: 13px;
+				background: #fff;
+				position: absolute;
+				right: 0;
+				top: 4px;
+			}
+
+			&:after{
+				content: '';
+				display: block;
+				width: 8px;
+				height: 5px;
+				position: absolute;
+				right: 2px;
+				top: 6px;
+				border-bottom: 1px solid #000;
+				border-right: 1px solid #000;
+				opacity: 0;
+				transition: all $t;
+			}
+		}
+
+		&:checked{
+			+ label{
+				&:after{
+					transform: rotate(45deg);
+					opacity: 1;
+				}
+			}
 		}
 	}
 }
