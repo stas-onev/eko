@@ -3,13 +3,13 @@
 	flex: auto;
 	display: flex;
 	justify-content: center;
-	padding: 85px 270px;
+	padding: 4.42vw 14.06vw;
 	background: $pink;
 	color: #fff;
 	position: relative;
 
 	.th-content{
-		max-width: 900px;
+		max-width: 880px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -19,8 +19,9 @@
 	.th-logo{
 		display: block;
 		position: absolute;
-		right: 27px;
-		top: 34px;
+		right: 1.40vw;
+		top: 1.77vw;
+		width: 11.14vw;
 
 		img{
 			display: block;
@@ -36,9 +37,9 @@
 
 	.th-caption{
 		text-align: center;
-		font-size: 100px;
+		font-size: 5.20vw;
 		line-height: .9;
-		margin-bottom: 35px;
+		margin-bottom: 1.82vw;
 		font-weight: bold;
 
 		span{
@@ -48,10 +49,10 @@
 	}
 
 	.th-card{
-		border: 9px solid #fff;
+		border: 0.46vw solid #fff;
 		background: #fff;
 		position: relative;
-		margin-bottom: 60px;
+		margin-bottom: 3.12vw;
 		width: 100%;
 
 		&:after{
@@ -59,7 +60,7 @@
 			display: block;
 			width: 100%;
 			height: 100%;
-			border: 3px solid $pink;
+			border: 0.15vw solid $pink;
 			position: absolute;
 			left: 0;
 			top: 0;
@@ -69,7 +70,7 @@
 		.card-content{
 			position: relative;
 			z-index: 5;
-			padding: 35px 50px 25px;
+			padding: 1.82vw 2.60vw 1.30vw;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -77,16 +78,16 @@
 
 		p{
 			color: $pink;
-			font-size: 38px;
+			font-size: 1.97vw;
 			line-height: 1;
-			margin-bottom: 0px;
+			margin-bottom: 0vw;
 			text-align: center;
 
 			&.discount-value{
-				font-size: 120px;
+				font-size: 6.25vw;
 				line-height: 0.8;
 				font-weight: bold;
-				margin-bottom: 25px;
+				margin-bottom: 1.30vw;
 			}
 		}
 	}
@@ -98,20 +99,20 @@
 
 		p{
 			text-align: center;
-			font-size: 38px;
-			line-height: 46px;
+			font-size: 1.97vw;
+			line-height: 2.39vw;
 			display: flex;
 			flex-direction: column;
 
 			strong{
 				font-weight: bold;
-				font-size: 70px;
+				font-size: 3.64vw;
 			}
 		}
 	}
 
 	.th-image{
-		margin-bottom: 50px;
+		margin-bottom: 2.60vw;
 
 		img{
 			display: block;
