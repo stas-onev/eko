@@ -56,6 +56,10 @@ ul{
 	.post-content{
 		padding-bottom: 80px;
 	}
+
+	&.no-padding{
+		padding: 0;
+	}
 }
 
 .container{

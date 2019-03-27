@@ -107,6 +107,8 @@
 	cursor: pointer;
 	transition: all $t;
 	margin-bottom: 15px;
+	padding: 0 30px;
+	color: $text-color;
 
 	&:after{
 		content: '';
@@ -132,7 +134,7 @@
 	}
 
 	&[disabled]{
-		color: #000;
+		color: $text-color;
 		opacity: .5;
 		cursor: default;
 	}

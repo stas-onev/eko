@@ -6,8 +6,8 @@ $(document).ready(function(){
 		dots: false,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		// autoplay: true,
-		// autoplaySpeed: 4000,
+		autoplay: true,
+		autoplaySpeed: 4000,
 		rtl: true,
 		infinite: true,
 		fade: true
@@ -33,8 +33,8 @@ $(document).ready(function(){
 		dots: false,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		// autoplay: true,
-		// autoplaySpeed: 4000,
+		autoplay: true,
+		autoplaySpeed: 4000,
 		rtl: true,
 		asNavFor: '.features-slider',
 		infinite: true
@@ -45,8 +45,8 @@ $(document).ready(function(){
 		dots: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		// autoplay: true,
-		// autoplaySpeed: 4000,
+		autoplay: true,
+		autoplaySpeed: 4000,
 		rtl: true,
 		infinite: true
 	});

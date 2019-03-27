@@ -1,0 +1,150 @@
+.thank-you-page{
+	min-height: 100%;
+	flex: auto;
+	display: flex;
+	justify-content: center;
+	padding: 85px 270px;
+	background: $pink;
+	color: #fff;
+	position: relative;
+
+	.th-content{
+		max-width: 900px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.th-logo{
+		display: block;
+		position: absolute;
+		right: 27px;
+		top: 34px;
+
+		img{
+			display: block;
+			max-width: 100%;
+			max-height: 100%;
+			transition: all $t;
+		}
+
+		&:hover{
+			opacity: .8;
+		}
+	}
+
+	.th-caption{
+		text-align: center;
+		font-size: 100px;
+		line-height: .9;
+		margin-bottom: 35px;
+		font-weight: bold;
+
+		span{
+			font-family: $second-font;
+			font-size: .75em;
+		}
+	}
+
+	.th-card{
+		border: 9px solid #fff;
+		background: #fff;
+		position: relative;
+		margin-bottom: 60px;
+		width: 100%;
+
+		&:after{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			border: 3px solid $pink;
+			position: absolute;
+			left: 0;
+			top: 0;
+			box-sizing: border-box;
+		}
+
+		.card-content{
+			position: relative;
+			z-index: 5;
+			padding: 35px 50px 25px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		p{
+			color: $pink;
+			font-size: 38px;
+			line-height: 1;
+			margin-bottom: 0px;
+			text-align: center;
+
+			&.discount-value{
+				font-size: 120px;
+				line-height: 0.8;
+				font-weight: bold;
+				margin-bottom: 25px;
+			}
+		}
+	}
+
+	.th-footer{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		p{
+			text-align: center;
+			font-size: 38px;
+			line-height: 46px;
+			display: flex;
+			flex-direction: column;
+
+			strong{
+				font-weight: bold;
+				font-size: 70px;
+			}
+		}
+	}
+
+	.th-image{
+		margin-bottom: 50px;
+
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	&.wine{
+		background: $wine;
+
+		.th-card{
+			&:after{
+				border-color: $wine;
+			}
+
+			p{
+				color: $wine;
+			}
+		}
+	}
+
+	&.gray{
+		background: $gray;
+
+		.th-card{
+			&:after{
+				border-color: $gray;
+			}
+
+			p{
+				color: $gray;
+			}
+		}
+	}
+}
