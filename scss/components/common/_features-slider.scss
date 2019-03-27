@@ -41,6 +41,10 @@
 		@media screen and (max-width: 999px){
 			font-size: 40px;
 		}
+
+		@media screen and (max-width: 767px){
+			font-size: 10.29vw;
+		}
 	}
 
 	.slick-arrow{
@@ -101,6 +105,33 @@
 
 				&:before{
 					border-width: 15px 20px 15px 0;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		.slide{
+			padding: 0 20px;
+		}
+
+		.slick-arrow{
+			width: 11px;
+			height: 25px;
+
+			&.slick-prev{
+				right: 10px;
+
+				&:before{
+					border-width: 8px 0 8px 11px;
+				}
+			}
+
+			&.slick-next{
+				left: 10px;
+
+				&:before{
+					border-width: 8px 11px 8px 0;
 				}
 			}
 		}

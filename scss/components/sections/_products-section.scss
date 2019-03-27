@@ -190,4 +190,46 @@
 			}
 		}
 	}
+
+	@media screen and (max-width: 767px){
+		padding-top: 70px;
+
+		&:before,
+		&:after{
+			background-size: 44px;
+			height: 34px;
+		}
+
+		.section-inner{
+			flex-direction: column;
+			align-items: stretch;
+
+			.section-text{
+				width: 100%;
+
+				h3{
+					font-size: 93px;
+					line-height: 73px;
+				}
+
+				&:before{
+					width: 130px;
+					height: 130px;
+					right: 180px;
+					top: 50%;
+					transform: translateY(-50%);
+					background-size: contain;
+				}
+
+				&:after{
+					width: 132px;
+					height: 140px;
+					right: 186px;
+					top: calc(50% - 7px);
+					transform: translateY(-50%);
+					background-size: contain;
+				}
+			}
+		}
+	}
 }

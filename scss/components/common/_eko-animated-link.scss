@@ -178,4 +178,24 @@
 			margin: 3px 0;
 		}
 	}
+
+	@media screen and (max-width: 767px){
+		.link-text{
+			margin: 3px 0;
+			padding-right: 5px;
+			padding-left: 15px;
+			font-size: 8.82vw;
+			height: 7.94vw;
+			line-height: 7.94vw;
+
+			&:after{
+				transform: translateY(-50%) scale(0.3);
+				left: 5px;
+			}
+		}
+
+		.eko{
+			font-size: 10.58vw;
+		}
+	}
 }

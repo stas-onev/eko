@@ -12,4 +12,10 @@
 			color: $pink;
 		}
 	}
+
+	@media screen and (max-width: 767px){
+		font-size: 4.4vw;
+		line-height: 1.333em;
+		padding: 10px 0;
+	}
 }

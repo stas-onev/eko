@@ -1,15 +1,53 @@
 .second-section{
 	margin-bottom: 25px;
+
+	&.desktop{ display: block; }
+	&.mobile{ display: none; }
+
+	@media screen and (max-width: 767px){
+		&.desktop{ display: none; }
+		&.mobile{ display: block; }
+	}
 }
 
 .fourth-section{
+	&.desktop{ display: block; }
+	&.mobile{ display: none; }
+
+	@media screen and (max-width: 767px){
+		&.desktop{ display: none; }
+		&.mobile{ display: block; }
+
+		.video-block{
+			background: #000;
+			margin-bottom: 3px;
+
+			video{
+				height: 52.94vw;
+			}
+		}
+	}
+}
+
+.big-buttons-section{
 	margin-bottom: 60px;
+
+	@media screen and (max-width: 767px){
+		margin-bottom: 15px;
+	}
 }
 
 .sale-section{
 	.container{
 		padding-top: 60px;
 		padding-bottom: 60px;
+	}
+
+	@media screen and (max-width: 767px){
+		.container{
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
 	}
 }
 
@@ -23,8 +61,12 @@
 
 		img{
 			display: block;
-			max-width: 100%;
+			max-width: 55%;
 			height: auto;
 		}
+	}
+
+	@media screen and (max-width: 767px){
+		padding: 20px 0;
 	}
 }

@@ -57,6 +57,18 @@
 				line-height: 30px;
 				margin-bottom: 25px;
 			}
+
+			.warranty{
+				display: none;
+				font-size: 6.57vw;
+				line-height: .75;
+				color: $primary;
+				margin-top: 10px;
+
+				@media screen and (max-width: 767px){
+					display: block;
+				}
+			}
 		}
 
 		.slide-info{
@@ -380,24 +392,145 @@
 		}
 	}
 
-	// @media screen and (max-width: 1199px){
-	// 	.slide-content{
-	// 		flex-wrap: wrap;
+	@media screen and (max-width: 767px){
+		.slide-caption{
+			padding-right: 0;
+			text-align: center;
+		}
 
-	// 		.slide-image{
-	// 			width: 130px;
-	// 			padding: 0 10px;
-	// 			margin-top: -30px;
-	// 			margin-bottom: 0;
-	// 		}
+		.slide-content{
+			flex-wrap: wrap;
+			padding: 1.5vw 20px 0;
 
-	// 		.slide-text{
-	// 			width: calc(100% - 130px);
-	// 		}
+			&:before{
+				content: '';
+				display: block;
+				width: 100%;
+				height: 20px;
+				background: #fff;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				top: auto;
+			}
 
-	// 		.slide-info{
-	// 			width: 100%;
-	// 		}
-	// 	}
-	// }
+			&:after{
+				display: none;
+			}
+
+			.slide-image{
+				width: 35vw;
+				padding: 0 2.94vw;
+				margin-top: -7.64vw;
+				margin-bottom: 0;
+			}
+
+			.slide-text{
+				width: calc(100% - 35vw);
+
+				p{
+					font-size: 4.4vw;
+					line-height: 1.1;
+					letter-spacing: 0.02em;
+					margin-bottom: 10px;
+				}
+			}
+
+			.slide-info{
+				width: 100%;
+				justify-content: center;
+				text-align: center;
+
+				&:before{
+					display: none;
+				}
+
+				.warranty{
+					display: none;
+				}
+
+				.price{
+					padding-left: 0;
+					font-size: 16.17vw;
+					line-height: .8;
+					margin-bottom: 10px;
+
+					span{
+						display: inline-block;
+						width: auto;
+						font-size: 4.4vw;
+					}
+				}
+
+				.btn{
+					margin: 0;
+				}
+			}
+		}
+
+		.product-params{
+			height: auto;
+			margin-bottom: 5.88vw;
+
+			> .item{
+				width: 13.23vw;
+				height: 13.23vw;
+
+				&:last-child{
+					margin-left: 0;
+				}
+			}
+		}
+
+		.product-volume{
+			font-size: 4.8vw;
+			line-height: .75;
+			border-width: 2px;
+		}
+
+		.slick-dots{
+			width: 100%;
+			left: 0;
+			bottom: -20px;
+
+			li{
+				width: 10px;
+				height: 10px;
+				margin: 0 3px;
+
+				button{
+					width: 10px;
+					height: 10px;
+
+					&:before{
+						width: 10px;
+						height: 10px;
+					}
+				}
+			}
+		}
+
+		.slick-arrow{
+			width: 14px;
+			height: 22px;
+
+			&:before{
+				border-width: 11px 0 11px 14px;
+				border-color: transparent transparent transparent $pink;
+			}
+
+			&.slick-prev{
+				right: 10px;
+			}
+
+			&.slick-next{
+				left: 10px;
+
+				&:before{
+					border-width: 11px 14px 11px 0;
+					border-color: transparent $pink transparent transparent;
+				}
+			}
+		}
+	}
 }

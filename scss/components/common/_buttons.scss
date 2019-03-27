@@ -50,6 +50,25 @@
 			transform-origin: left center;
 		}
 	}
+
+	@media screen and (max-width: 767px){
+		font-size: 47px;
+		line-height: 42px;
+		height: 42px;
+		padding: 0 15px;
+
+		&:after{
+			position: static;
+			margin-right: 8px;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			width: 15px;
+			height: 24px;
+			background-size: contain;
+			transform: none;
+		}
+	}
 }
 
 .cta-btn{
@@ -137,6 +156,29 @@
 				font-size: 52px;
 			}
 		}
+
+		@media screen and (max-width: 767px){
+			font-size: 4.38vw;
+			line-height: .85;
+
+			strong{
+				font-size: 6.47vw;
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		border-width: 2px;
+
+		.btn-content{
+			padding: 2px;
+
+			&:after{
+				font-size: 3.23vw;
+				padding-top: 3px;
+				line-height: .75;
+			}
+		}
 	}
 
 	&:hover{
@@ -188,6 +230,37 @@
 				}
 			}
 		}
+
+		@media screen and (max-width: 767px){
+			border-width: 5px;
+
+			&:before{
+				display: none;
+			}
+
+			.btn-content{
+				padding: 10px;
+				font-size: 50px;
+				position: static;
+				min-height: 100px;
+				flex-direction: row;
+				flex-wrap: wrap;
+
+				strong{
+					font-size: 50px;
+					margin-left: 5px;
+				}
+
+				&:after{
+					width: 100%;
+					text-align: center;
+					font-size: 45px;
+					line-height: .75;
+					padding-top: 8px;
+					position: static;
+				}
+			}
+		}
 	}
 
 	&.wine{
@@ -226,6 +299,10 @@
 		&:hover{
 			color: $gray;
 		}
+	}
+
+	@media screen and (max-width: 767px){
+		
 	}
 }
 
@@ -326,6 +403,24 @@
 	@media screen and (max-width: 999px){
 		.btn-content{
 			font-size: 80px;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		border-width: 10px;
+
+		&:before{
+			padding-top: 56.25%;
+		}
+
+		.btn-content{
+			font-size: 16.5vw;
+
+			&:after{
+				width: 75px;
+				height: 32px;
+				margin-top: 20px;
+			}
 		}
 	}
 }

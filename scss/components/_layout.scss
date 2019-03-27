@@ -45,6 +45,10 @@ ul{
 	flex-direction: column;
 	padding-top: 80px;
 
+	@media screen and (max-width: 1399px){
+		padding-top: 60px;
+	}
+
 	.page{
 		flex: auto;
 	}
@@ -68,6 +72,10 @@ ul{
 
 	@media screen and (max-width: 1499px){
 		width: calc(100% - 60px);
+	}
+
+	@media screen and (max-width: 767px){
+		width: calc(100% - 20px);
 	}
 }
 

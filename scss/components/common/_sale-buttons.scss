@@ -33,4 +33,17 @@
 			padding: 0 15px;
 		}
 	}
+
+	@media screen and (max-width: 767px){
+		flex-direction: column;
+
+		.item{
+			margin-bottom: 5px;
+			max-width: 100%;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
 }

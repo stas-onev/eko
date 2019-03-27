@@ -1,0 +1,39 @@
+.menu-opener{
+	.bar{
+		width: 20px;
+		height: 1px;
+		background: #58585a;
+		transition: all $t;
+		margin-bottom: 5px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	&:hover{
+		.bar{
+			background: $pink;
+		}
+	}
+
+	&.active{
+		.bar{
+			&:nth-child(1){
+				transform-origin: right bottom;
+				transform: rotate(-45deg);
+				width: 17px;
+			}
+
+			&:nth-child(2){
+				transform: rotateX(90deg);
+			}
+
+			&:nth-child(3){
+				transform-origin: right top;
+				transform: rotate(45deg);
+				width: 17px;
+			}
+		}
+	}
+}

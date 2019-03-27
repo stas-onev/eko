@@ -23,4 +23,9 @@
 		height: 50px;
 		transform: translateY(-10px);
 	}
+
+	@media screen and (max-width: 767px){
+		height: 42px;
+		transform: translateY(0);
+	}
 }

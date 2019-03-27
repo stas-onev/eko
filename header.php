@@ -37,4 +37,16 @@
 						</div>
 					</div>
 				</div>
+				<div class="header-mobile">
+					<div class="mobile-logo">
+						<a href="#top" class="logo-block">
+							<img src="img/logo-gray.png" alt="">
+						</a>
+						<div class="menu-opener">
+							<div class="bar"></div>
+							<div class="bar"></div>
+							<div class="bar"></div>
+						</div>
+					</div>
+				</div>
 			</header>
