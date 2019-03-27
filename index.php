@@ -199,7 +199,13 @@
 							</div>
 							<div class="item video-wrapper">
 								<div class="tile video">
-									<div class="tile-content"></div>
+									<div class="tile-content">
+										<div class="video-block">
+											<video autoplay muted loop>
+												<source src="https://www.w3schools.com/tags/movie.mp4">
+											</video>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
