@@ -82,7 +82,7 @@
 								<div class="form-text">
 									<p>1. לוחצים על כפתור השיתוף לפייסבוק ו...משתפים. <br>2. ממלאים את הפרטים בטופס ומקבלים באותו רגע מייל והודעה עם שובר של 15% הנחה למימוש מיידי על מגוון פחי <span>EKO</span> בחנות האונליין </p>
 								</div>
-								<button class="form-button" type="submit">
+								<button class="form-button fb-share" type="submit">
 									<span>קליק לשיתוף בפייס</span>
 								</button>
 							</div>
@@ -114,7 +114,7 @@
 					</div>
 					<div class="panel-close">אני רוצה הנחה אחרת</div>
 					<div class="panel-image">
-						<img src="img/apple.png" alt="">
+						<img src="img/flower.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -135,26 +135,55 @@
 					</div>
 					<div class="panel-form">
 						<form action="#" class="form">
-							<h4>הנחה שתתלבש עלייך טוב</h4>
+							<h4>חברים זה הכי פאשן</h4>
 							<div class="form-content">
 								<div class="form-text">
-									<p>ממלאים את הפרטים בטופס ומקבלים באותו רגע <br>מייל והודעה עם שובר של 10% הנחה למימוש מיידי <br>בחנות האונליין <span>EKO</span> על מגוון פחי</p>
+									<p>שולחים ל 2 חברים שובר הנחה בשווי 10% למייל. ממלאים את הפרטים בטופס ומקבלים באותו רגע מייל והודעה עם שובר של 20% הנחה למימוש מיידי על מגוון פחי <span>EKO</span>  בחנות האונליין </p>
 								</div>
 							</div>
 							<div class="form-fields">
 								<div class="form-row">
-									<div class="input-field">
+									<div class="input-field no-triangle">
+										<span class="field-number">1</span>
 										<input type="text" placeholder="שם מלא"><!-- Name -->
 									</div>
 								</div>
 								<div class="form-row">
-									<div class="input-field">
+									<div class="input-field no-triangle">
 										<input type="tel" placeholder="טלפון כולל קידומת"><!-- Phone -->
 									</div>
 								</div>
 								<div class="form-row">
-									<div class="input-field">
+									<div class="input-field no-triangle">
 										<input type="email" placeholder="מייל"><!-- Email -->
+									</div>
+								</div>
+							</div>
+							<div class="form-fields">
+								<div class="form-row flex">
+									<div class="item">
+										<div class="input-field no-triangle">
+											<span class="field-number">2</span>
+											<input type="text" placeholder="שם מלא של החבר או החברה"><!-- Name of Friend or Company -->
+										</div>
+									</div>
+									<div class="item">
+										<div class="input-field no-triangle no-padding">
+											<input type="email" placeholder="מייל של החבר או החברה"><!-- Friend or Company Email -->
+										</div>
+									</div>
+								</div>
+								<div class="form-row flex">
+									<div class="item">
+										<div class="input-field no-triangle">
+											<span class="field-number">3</span>
+											<input type="text" placeholder="שם מלא של החבר או החברה"><!-- Name of Friend or Company -->
+										</div>
+									</div>
+									<div class="item">
+										<div class="input-field no-triangle no-padding">
+											<input type="email" placeholder="מייל של החבר או החברה"><!-- Friend or Company Email -->
+										</div>
 									</div>
 								</div>
 							</div>
@@ -169,7 +198,7 @@
 					</div>
 					<div class="panel-close">אני רוצה הנחה אחרת</div>
 					<div class="panel-image">
-						<img src="img/apple.png" alt="">
+						<img src="img/banana-panel.png" alt="">
 					</div>
 				</div>
 			</div>

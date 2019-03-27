@@ -213,7 +213,7 @@
 	.panel-close{
 		position: absolute;
 		padding-top: 80px;
-		left: calc(340px / 2);
+		left: calc(340px / 2 + 120px); // image width / 2 + left padding
 		transform: translateX(-50%);
 		font-size: 32px;
 		line-height: 30px;
