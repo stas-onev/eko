@@ -63,6 +63,13 @@ $(document).ready(function(){
 		centerBrowser: 1
 	});
 
+	// Preloader
+	$(window).load(function(){
+		$('.preloader').fadeOut('slow',function(){
+			$(this).remove();
+		});
+	});
+
 	// Mobile Nav
 	$('.menu-opener').click(function(e){
 		$(this).toggleClass('active');

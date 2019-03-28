@@ -216,10 +216,13 @@
 			<a href="#sale-section" class="sale-link">SALE<span>SALE</span>SALE</a>
 		</div>
 	</div>
+	<div class="preloader">
+		<img src="img/preloader.gif" alt="">
+	</div>
 	<script defer src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script defer src="//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js"></script>
 	<script defer src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	
+
 	<script defer src="js/jquery.popupWindow.js"></script>
 	<script defer src="js/scripts.js"></script>
 	<?php // wp_footer(); ?>
