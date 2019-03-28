@@ -1,5 +1,29 @@
 $(document).ready(function(){
 
+	$('.text-newsletter input').val('no');
+
+	$('#newsletter-10-percent').change(function() {
+		if($(this).is(":checked")) {
+			$(this).closest('form').find('.text-newsletter input').val('yes');
+		}else{
+			$(this).closest('form').find('.text-newsletter input').val('no');
+		}
+	});
+	$('#newsletter-15-percent').change(function() {
+		if($(this).is(":checked")) {
+			$(this).closest('form').find('.text-newsletter input').val('yes');
+		}else{
+			$(this).closest('form').find('.text-newsletter input').val('no');
+		}
+	});
+	$('#newsletter-20-percent').change(function() {
+		if($(this).is(":checked")) {
+			$(this).closest('form').find('.text-newsletter input').val('yes');
+		}else{
+			$(this).closest('form').find('.text-newsletter input').val('no');
+		}
+	});
+
 	// Sliders
 	$('.photos-slider').slick({
 		arrows: false,
