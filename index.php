@@ -214,7 +214,7 @@
 									<div class="slide-info">
 										<p class="warranty">עם 3 שנות אחריות!</p>
 										<p class="price"><span>החל מ-</span> 799 ש”ח</p>
-										<a href="#" class="btn">אני רוצה כזה</a>
+										<a href="#" class="btn" target="_blank">אני רוצה כזה</a>
 									</div>
 								</div>
 							</div>
@@ -244,7 +244,7 @@
 									<div class="slide-info">
 										<p class="warranty">עם 3 שנות אחריות!</p>
 										<p class="price"><span>החל מ-</span> 799 ש”ח</p>
-										<a href="#" class="btn">אני רוצה כזה</a>
+										<a href="#" class="btn" target="_blank">אני רוצה כזה</a>
 									</div>
 								</div>
 							</div>
@@ -430,7 +430,7 @@
 							<div class="item">
 								<div class="tile transparent no-square">
 									<div class="tile-content">
-										<a href="#" class="big-btn gray">
+										<a href="#" class="big-btn gray" target="_blank">
 											<div class="btn-content">
 												<span>לרכישה  אונליין</span>
 											</div>
@@ -443,7 +443,7 @@
 							<div class="item">
 								<div class="tile transparent no-square">
 									<div class="tile-content">
-										<a href="#" class="big-btn">
+										<a href="#" class="big-btn" data-popup="#shops-list-popup">
 											<div class="btn-content">
 												<span>לרשימת  החנויות</span>
 											</div>

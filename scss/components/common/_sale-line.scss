@@ -7,9 +7,11 @@
 	font-family: $second-font;
 	color: #fff;
 	text-transform: uppercase;
+	animation: saleline-blink 1s infinite linear;
 
 	span{
 		color: #000;
+		animation: saleline-blink-reverse 1s infinite linear;
 	}
 
 	@media screen and (max-width: 1399px){
@@ -62,5 +64,41 @@
 
 	100%{
 		transform: translateX(0);
+	}
+}
+
+@keyframes saleline-blink{
+	0%{
+		color: #fff;
+	}
+
+	49%{
+		color: #fff;
+	}
+
+	50%{
+		color: #000;
+	}
+
+	100%{
+		color: #000;
+	}
+}
+
+@keyframes saleline-blink-reverse{
+	0%{
+		color: #000;
+	}
+
+	49%{
+		color: #000;
+	}
+
+	50%{
+		color: #fff;
+	}
+
+	100%{
+		color: #fff;
 	}
 }

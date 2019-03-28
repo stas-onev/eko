@@ -51,6 +51,29 @@ $(document).ready(function(){
 		infinite: true
 	});
 
+	// FB Share
+	$('.fb-share').click(function(e){
+		$(this).closest('form').find('.disabled').removeClass('disabled');
+		$(this).closest('form').find('[disabled]').prop('disabled', false)
+	});
+
+	$('.fb-share').popupWindow({ 
+		width: 750, 
+		height: 600,
+		centerBrowser: 1
+	});
+
+	// Mobile Nav
+	$('.menu-opener').click(function(e){
+		$(this).toggleClass('active');
+		$('.mobile-nav-panel').toggleClass('visible');
+	});
+
+	$('.mobile-nav-panel a').click(function(){
+		$('.mobile-nav-panel').removeClass('visible');
+		$('.menu-opener').removeClass('active');
+	});
+
 	// Panels
 	var scrollTop;
 	$('[data-panel]').click(function(e){
