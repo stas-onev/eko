@@ -219,6 +219,37 @@
 	<div class="preloader">
 		<img src="img/preloader.gif" alt="">
 	</div>
+	<div class="popup" id="shops-list-popup">
+		<div class="popup-inner">
+			<div class="popup-dialog">
+				<div class="popup-content">
+					<div class="popup-close"></div>
+					<h4 class="popup-caption">רשימת החנויות</h4>
+					<ul class="shops-list">
+						<li><a href="#" target="_blank">שופרסל</a></li>
+						<li><a href="#" target="_blank">קיטשן מרקט (תל אביב)</a></li>
+						<li><a href="#" target="_blank">בי אפל “פוד אפיל” (בני ברק/תל אביב)</a></li>
+						<li><a href="#" target="_blank">שופרסל אונליין</a></li>
+						<li><a href="#" target="_blank">א ישראלי (תל אביב)</a></li>
+						<li><a href="#" target="_blank">עידן פרזול (מודיעין/רמלה)</a></li>
+						<li><a href="#" target="_blank">4שף</a></li>
+						<li><a href="#" target="_blank">ל.ש ישראלי (עפולה)</a></li>
+						<li><a href="#" target="_blank">E-bath (חולון)</a></li>
+						<li><a href="#" target="_blank">הבית שלך (פתח תקוה)</a></li>
+						<li><a href="#" target="_blank">ניופאן גורמה (בני ברק/אשדוד/תל אביב)</a></li>
+						<li><a href="#" target="_blank">איי גיפט (ראשל”צ)</a></li>
+						<li><a href="#" target="_blank">כלי בית (הוד השרון)</a></li>
+						<li><a href="#" target="_blank">פוקס/דרים קארד (מודיעין)</a></li>
+						<li><a href="#" target="_blank">דומיסיל (הלח"י, בני ברק)</a></li>
+						<li><a href="#" target="_blank">הידית והפרזול (ירושלים)</a></li>
+						<li><a href="#" target="_blank">לויזון (ירושלים)</a></li>
+						<li><a href="#" target="_blank">אלקטרו ציון (תל אביב)</a></li>
+						<li><a href="#" target="_blank">פרחי תבור (כפר ויתקין)</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script defer src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script defer src="//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js"></script>
 	<script defer src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

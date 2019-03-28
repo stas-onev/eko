@@ -81,6 +81,21 @@ $(document).ready(function(){
 		$('.menu-opener').removeClass('active');
 	});
 
+	// Popups
+	$('[data-popup]').click(function(e){
+		e.preventDefault();
+
+		var dest = $( $(this).data('popup') );
+
+		dest.addClass('visible');
+	});
+
+	$('.popup-close').click(function(e){
+		e.preventDefault();
+
+		$(this).closest('.popup').removeClass('visible');
+	});
+
 	// Panels
 	var scrollTop;
 	$('[data-panel]').click(function(e){

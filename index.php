@@ -426,33 +426,33 @@
 		<div class="big-buttons-section" id="big-buttons">
 			<div class="container">
 				<div class="tiles-container xs-column">
-						<div class="column wide">
-							<div class="item">
-								<div class="tile transparent no-square">
-									<div class="tile-content">
-										<a href="#" class="big-btn gray" target="_blank">
-											<div class="btn-content">
-												<span>לרכישה  <br>אונליין</span>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="column wide">
-							<div class="item">
-								<div class="tile transparent no-square">
-									<div class="tile-content">
-										<a href="#" class="big-btn" data-popup="#shops-list-popup">
-											<div class="btn-content">
-												<span>לרשימת  <br>החנויות</span>
-											</div>
-										</a>
-									</div>
+					<div class="column wide">
+						<div class="item">
+							<div class="tile transparent no-square">
+								<div class="tile-content">
+									<a href="#" class="big-btn gray" target="_blank">
+										<div class="btn-content">
+											<span>לרכישה  <br>אונליין</span>
+										</div>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
+					<div class="column wide">
+						<div class="item">
+							<div class="tile transparent no-square">
+								<div class="tile-content">
+									<a href="#" class="big-btn" data-popup="#shops-list-popup">
+										<div class="btn-content">
+											<span>לרשימת  <br>החנויות</span>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="sale-section" id="sale-section">
