@@ -416,6 +416,10 @@
 		.btn-content{
 			font-size: 16.5vw;
 
+			br{
+				display: none;
+			}
+
 			&:after{
 				width: 75px;
 				height: 32px;

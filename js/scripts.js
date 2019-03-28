@@ -109,8 +109,16 @@ $(document).ready(function(){
 
 	// Scroll to anchor
 	$('a[href^="#"]').click(function(){
+		var headerHeight;
+
+		if($(window).width() <= 1399){
+			headerHeight = 80;
+		} else{
+			headerHeight = 60;
+		}
+
 		 $('html, body').animate({
-			scrollTop: $( $.attr(this, 'href') ).offset().top - $('.header').height() - 20
+			scrollTop: $( $.attr(this, 'href') ).offset().top - headerHeight - 25
 		}, 500);
 		return false;
 	});

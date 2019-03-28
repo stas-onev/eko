@@ -121,13 +121,14 @@
 			justify-content: center;
 			text-align: center;
 			flex-direction: column;
-			font-size: 9.38vw;
+			font-size: 5vw;
 			line-height: 0.75;
 			font-weight: bold;
 			z-index: 2;
 
 			span{
 				display: block;
+				font-weight: 400;
 			}
 		}
 	}

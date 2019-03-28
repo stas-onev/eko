@@ -432,7 +432,7 @@
 									<div class="tile-content">
 										<a href="#" class="big-btn gray" target="_blank">
 											<div class="btn-content">
-												<span>לרכישה  אונליין</span>
+												<span>לרכישה  <br>אונליין</span>
 											</div>
 										</a>
 									</div>
@@ -445,7 +445,7 @@
 									<div class="tile-content">
 										<a href="#" class="big-btn" data-popup="#shops-list-popup">
 											<div class="btn-content">
-												<span>לרשימת  החנויות</span>
+												<span>לרשימת  <br>החנויות</span>
 											</div>
 										</a>
 									</div>

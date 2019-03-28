@@ -132,7 +132,7 @@
 			padding-left: 25px;
 
 			&:after{
-				transform: translateY(-50%) scale(0.5);
+				transform: translateY(-50%) scale(0.35);
 				transform-origin: left center;
 				left: 10px;
 			}
@@ -166,10 +166,15 @@
 	@media screen and (max-width: 899px){
 		.link-text{
 			font-size: 30px;
+			line-height: 30px;
+
+			&:after{
+				transform: translateY(-50%) scale(0.35);
+			}
 		}
 
 		.eko{
-			font-size: 36px;
+			font-size: 42px;
 		}
 	}
 

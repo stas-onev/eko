@@ -7,6 +7,7 @@
 	.column{
 		width: 25%;
 		flex-wrap: wrap;
+		padding: 0 8px;
 
 		&.wide{
 			width: 50%;
@@ -21,7 +22,7 @@
 		}
 
 		.item{
-			padding: 8px;
+			padding: 8px 0;
 
 			&.tall{
 				height: 100%;
@@ -31,11 +32,12 @@
 		.row{
 			display: flex;
 			width: calc(100% + 16px);
-			margin-left: -10px;
-			margin-right: -10px;
+			margin-left: -8px;
+			margin-right: -8px;
 
 			.item{
 				flex: auto;
+				padding: 8px;
 			}
 		}
 	}
@@ -123,6 +125,10 @@
 	&.small-padding{
 		.tile-content{
 			padding: 15px;
+
+			@media screen and (max-width: 991px){
+				padding: 8px;
+			}
 		}
 	}
 
