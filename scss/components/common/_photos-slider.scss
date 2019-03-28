@@ -31,5 +31,9 @@
 		.slide{
 			padding-bottom: calc(29.4vw + 10px);
 		}
+
+		@media screen and (max-width: 767px){
+			width: 85% !important;
+		}
 	}
 }

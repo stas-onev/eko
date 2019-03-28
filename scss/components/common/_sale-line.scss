@@ -7,11 +7,11 @@
 	font-family: $second-font;
 	color: #fff;
 	text-transform: uppercase;
-	animation: saleline-blink 1s infinite linear;
+	animation: saleline-blink 2s infinite linear;
 
 	span{
 		color: #000;
-		animation: saleline-blink-reverse 1s infinite linear;
+		animation: saleline-blink-reverse 2s infinite linear;
 	}
 
 	@media screen and (max-width: 1399px){

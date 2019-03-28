@@ -96,6 +96,7 @@
 		border: 1px solid $wine;
 		z-index: 1;
 		transition: all $t;
+		box-sizing: border-box;
 	}
 
 	.btn-content{

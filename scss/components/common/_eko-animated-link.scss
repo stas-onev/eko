@@ -186,7 +186,7 @@
 
 	@media screen and (max-width: 767px){
 		.link-text{
-			margin: 3px 0;
+			margin: 2px 0;
 			padding-right: 5px;
 			padding-left: 15px;
 			font-size: 8.82vw;
@@ -201,6 +201,16 @@
 
 		.eko{
 			font-size: 10.58vw;
+		}
+	}
+
+	@media screen and (max-width: 359px){
+		.link-text{
+			font-size: 7.4vw;
+		}
+
+		.eko{
+			font-size: 9.58vw;
 		}
 	}
 }

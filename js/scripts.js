@@ -53,8 +53,8 @@ $(document).ready(function(){
 
 	// FB Share
 	$('.fb-share').click(function(e){
-		$(this).closest('form').find('.disabled').removeClass('disabled');
-		$(this).closest('form').find('[disabled]').prop('disabled', false)
+		$(this).closest('.form').find('.disabled').removeClass('disabled');
+		$(this).closest('.form').find('[disabled]').prop('disabled', false)
 	});
 
 	$('.fb-share').popupWindow({ 

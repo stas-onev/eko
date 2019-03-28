@@ -519,6 +519,7 @@
 		.slick-arrow{
 			width: 14px;
 			height: 22px;
+			top: calc(50% + 45px - 11px);
 
 			&:before{
 				border-width: 11px 0 11px 14px;
