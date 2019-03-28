@@ -52,7 +52,7 @@
 		outline: none !important;
 		transition: all $t;
 		background: transparent;
-		border-bottom: 0.10vw solid #fff;
+		border-bottom: 1px solid #fff;
 		font-family: $main-font;
 
 		&::placeholder{
@@ -69,6 +69,23 @@
 			color: #fff;
 		}
 	}
+
+	@media screen and (max-width: 1199px){
+		padding-right: 20px;
+
+		.field-number{
+			font-size: 40px;
+		}
+
+		&:after{
+			border-width: 7.5px 10px 7.5px 0;
+		}
+
+		input{
+			font-size: 17px;
+			height: 24px;
+		}
+	}
 }
 
 .form{
@@ -83,6 +100,21 @@
 
 			> .item{
 				padding: 0 0.63vw;
+				flex-basis: 100%;
+			}
+		}
+
+		@media screen and (max-width: 1199px){
+			margin-bottom: 20px;
+
+			&.flex{
+				width: calc(100% + 20px);
+				margin-left: -10px;
+				margin-right: -10px;
+
+				> .item{
+					padding: 0 10px;
+				}
 			}
 		}
 
@@ -138,6 +170,18 @@
 		opacity: .5;
 		cursor: default;
 	}
+
+	@media screen and (max-width: 767px){
+		height: 44px;
+		font-size: 37px;
+		padding: 3px 15px;
+		margin-bottom: 8px;
+		max-width: 100%;
+
+		&:after{
+			border-width: 12px 16px 12px 0;
+		}
+	}
 }
 
 .panel{
@@ -158,8 +202,8 @@
 
 		+ label{
 			padding-right: 20px;
-			font-size: 1.04vw;
-			line-height: 1.04vw;
+			font-size: 13px;
+			line-height: 13px;
 			color: #fff;
 			position: relative;
 			cursor: pointer;
@@ -172,7 +216,7 @@
 				background: #fff;
 				position: absolute;
 				right: 0;
-				top: 0.21vw;
+				top: 0;
 			}
 
 			&:after{
@@ -181,8 +225,8 @@
 				width: 4px;
 				height: 8px;
 				position: absolute;
-				right: 5px;
-				top: 2px;
+				right: 4px;
+				top: 1px;
 				border-bottom: 1px solid #000;
 				border-right: 1px solid #000;
 				opacity: 0;
